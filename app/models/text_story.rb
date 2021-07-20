@@ -1,0 +1,2 @@
+class TextStory < ApplicationRecord
+end
