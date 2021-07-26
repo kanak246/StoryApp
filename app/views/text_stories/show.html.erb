@@ -1,14 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name of story:</strong>
-  <%= @text_story.name_of_story %>
-</p>
+<div class="jumbotron">
+  <h1 class="display-4"><%= @text_story.name_of_story %> </h1>
+  <p class="lead"><%= @text_story.description_of_story %></p>
+  <p class="lead">
+    <a class="btn btn-secondary" href="#" role="button"> Hindi </a>
+    <a class="btn btn-secondary" href="#" role="button">English </a>
+  </p>
+  <hr class="my-4">
 
-<p>
-  <strong>Description of story:</strong>
-  <%= @text_story.description_of_story %>
-</p>
 
+</div>
+
+
+
+
+
+
+<!--
 <%= link_to 'Edit', edit_text_story_path(@text_story) %> |
-<%= link_to 'Back', text_stories_path %>
+-->
+<%= link_to 'Back', text_stories_path, class:"btn btn-secondary" %>

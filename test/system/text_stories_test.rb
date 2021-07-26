@@ -7,7 +7,7 @@ class TextStoriesTest < ApplicationSystemTestCase
 
   test "visiting the index" do
     visit text_stories_url
-    assert_selector "h1", text: "Text Stories"
+    assert_selector "h1", text: "Text stories"
   end
 
   test "creating a Text story" do

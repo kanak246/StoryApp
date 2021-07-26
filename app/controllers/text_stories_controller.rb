@@ -18,7 +18,11 @@ class TextStoriesController < ApplicationController
   # GET /text_stories/1/edit
   def edit
   end
+  def english
+  end
 
+  def hindi
+  end
   # POST /text_stories or /text_stories.json
   def create
     @text_story = TextStory.new(text_story_params)
@@ -56,11 +60,11 @@ class TextStoriesController < ApplicationController
     end
   end
 
-  private
+   private
     # Use callbacks to share common setup or constraints between actions.
     def set_text_story
-      @text_story = TextStory.find(params[:id])
-    end
+   @text_story = TextStory.find(params[:id])
+ end
 
     # Only allow a list of trusted parameters through.
     def text_story_params
